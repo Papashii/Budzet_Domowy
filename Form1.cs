@@ -12,6 +12,9 @@ namespace Budzet_Domowy
 
         }
     }
-    public class Chleb { 
+    public class Chleb
+    {
+        InitializeComponent();
+
     }
 }
