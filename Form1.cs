@@ -12,4 +12,6 @@ namespace Budzet_Domowy
 
         }
     }
+    public class Chleb { 
+    }
 }
