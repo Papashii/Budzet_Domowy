@@ -1,0 +1,16 @@
+C:\Users\patry\Desktop\projekty\budzet domowy\bin\Debug\net7.0-windows\budzet domowy.exe
+C:\Users\patry\Desktop\projekty\budzet domowy\bin\Debug\net7.0-windows\budzet domowy.deps.json
+C:\Users\patry\Desktop\projekty\budzet domowy\bin\Debug\net7.0-windows\budzet domowy.runtimeconfig.json
+C:\Users\patry\Desktop\projekty\budzet domowy\bin\Debug\net7.0-windows\budzet domowy.dll
+C:\Users\patry\Desktop\projekty\budzet domowy\bin\Debug\net7.0-windows\budzet domowy.pdb
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet_domowy.Form1.resources
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.csproj.GenerateResource.cache
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.AssemblyInfoInputs.cache
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.AssemblyInfo.cs
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.csproj.CoreCompileInputs.cache
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.dll
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\refint\budzet domowy.dll
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.pdb
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\budzet domowy.genruntimeconfig.cache
+C:\Users\patry\Desktop\projekty\budzet domowy\obj\Debug\net7.0-windows\ref\budzet domowy.dll

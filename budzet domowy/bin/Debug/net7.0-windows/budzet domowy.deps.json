@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "budzet domowy/1.0.0": {
+        "runtime": {
+          "budzet domowy.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "budzet domowy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
