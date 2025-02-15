@@ -1,4 +1,4 @@
-namespace budzet_domowy
+namespace Budzet_Domowy
 {
     public partial class Form1 : Form
     {
@@ -9,7 +9,13 @@ namespace budzet_domowy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            skibidi
+
         }
+    }
+    public class Chleb
+    {
+        InitializeComponent();
+        skibidi
+
     }
 }
