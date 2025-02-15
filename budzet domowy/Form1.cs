@@ -9,7 +9,7 @@ namespace budzet_domowy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            s
+            skibidi
         }
     }
 }
