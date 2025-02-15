@@ -15,6 +15,7 @@ namespace Budzet_Domowy
     public class Chleb
     {
         InitializeComponent();
+        skibidi
 
     }
 }
