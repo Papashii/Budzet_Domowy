@@ -39,7 +39,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Menu;
-            label1.Location = new Point(268, 9);
+            label1.Location = new Point(294, 9);
             label1.Name = "label1";
             label1.Size = new Size(212, 37);
             label1.TabIndex = 0;
@@ -49,18 +49,22 @@
             // 
             button1.Location = new Point(91, 121);
             button1.Name = "button1";
-            button1.Size = new Size(176, 23);
+            button1.Size = new Size(176, 80);
             button1.TabIndex = 1;
             button1.Text = "Dodaj przychód";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
+            button2.FlatAppearance.BorderColor = Color.Black;
+            button2.FlatAppearance.BorderSize = 2;
+            button2.FlatAppearance.MouseDownBackColor = Color.Black;
+            button2.FlatAppearance.MouseOverBackColor = Color.Black;
             button2.Location = new Point(518, 121);
             button2.Name = "button2";
-            button2.Size = new Size(176, 23);
+            button2.Size = new Size(176, 80);
             button2.TabIndex = 2;
-            button2.Text = "zobacz swój aktualny budzet";
+            button2.Text = "Zobacz swój aktualny budzet";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -68,7 +72,7 @@
             // 
             button3.Location = new Point(304, 121);
             button3.Name = "button3";
-            button3.Size = new Size(176, 23);
+            button3.Size = new Size(176, 80);
             button3.TabIndex = 3;
             button3.Text = "Dodaj wydatki";
             button3.UseVisualStyleBackColor = true;
