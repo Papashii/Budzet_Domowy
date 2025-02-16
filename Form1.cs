@@ -16,6 +16,11 @@ namespace Budzet_Domowy
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Chleb
     {
