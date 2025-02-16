@@ -53,6 +53,7 @@
             button1.TabIndex = 1;
             button1.Text = "Dodaj przychód";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -60,22 +61,23 @@
             button2.FlatAppearance.BorderSize = 2;
             button2.FlatAppearance.MouseDownBackColor = Color.Black;
             button2.FlatAppearance.MouseOverBackColor = Color.Black;
-            button2.Location = new Point(518, 121);
+            button2.Location = new Point(330, 121);
             button2.Name = "button2";
             button2.Size = new Size(176, 80);
             button2.TabIndex = 2;
-            button2.Text = "Zobacz swój aktualny budzet";
+            button2.Text = "Dodaj wydatki";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(304, 121);
+            button3.Location = new Point(550, 121);
             button3.Name = "button3";
             button3.Size = new Size(176, 80);
             button3.TabIndex = 3;
-            button3.Text = "Dodaj wydatki";
+            button3.Text = "Zobacz swój aktualny budzet";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
