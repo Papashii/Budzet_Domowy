@@ -11,6 +11,11 @@ namespace Budzet_Domowy
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Chleb
     {
