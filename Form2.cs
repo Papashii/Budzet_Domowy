@@ -21,7 +21,7 @@ namespace Budzet_Domowy
            
             string filePath = "dane.txt";
 
-            // Dane z kontrolek
+           
             if (!decimal.TryParse(textBox1.Text, out decimal income) || income <= 0 ||
                 !decimal.TryParse(textBox2.Text, out decimal expense) || expense <= 0)
             {
