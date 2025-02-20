@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Budzet_Domowy
@@ -17,14 +11,42 @@ namespace Budzet_Domowy
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form2_Load(object sender, EventArgs e)
         {
+            // Kod inicjalizacyjny do załadowania formularza
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Ścieżka do pliku, w którym będziemy zapisywać dane
+            string filePath = "dane.txt";
+
+            // Dane z kontrolek
+            if (!decimal.TryParse(textBox1.Text, out decimal income) || income <= 0 ||
+                !decimal.TryParse(textBox2.Text, out decimal expense) || expense <= 0)
+            {
+                MessageBox.Show("Podałeś że masz więcej wydatków niż przychodu!!! Wprowadź odpowiednie dane");
+                return;
+            }
+
+            if (expense > income)
+            {
+                MessageBox.Show("Wydatki nie mogą być większe niż przychód.");
+                return;
+            }
+            
+            string dataToSave = $"{income},{expense}";
+
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine(dataToSave);
+            }
+
+           
+            MessageBox.Show("Pomyślnie wprowadzono dane");
+
+            
+            this.Close();
         }
     }
 }

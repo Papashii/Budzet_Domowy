@@ -30,7 +30,6 @@
         {
             label1 = new Label();
             button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
             SuspendLayout();
             // 
@@ -47,31 +46,17 @@
             // 
             // button1
             // 
-            button1.Location = new Point(91, 121);
+            button1.Location = new Point(193, 139);
             button1.Name = "button1";
             button1.Size = new Size(176, 80);
             button1.TabIndex = 1;
-            button1.Text = "Dodaj przychód";
+            button1.Text = "Dodaj swoje Przychody i Wydatki";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.FlatAppearance.BorderColor = Color.Black;
-            button2.FlatAppearance.BorderSize = 2;
-            button2.FlatAppearance.MouseDownBackColor = Color.Black;
-            button2.FlatAppearance.MouseOverBackColor = Color.Black;
-            button2.Location = new Point(330, 121);
-            button2.Name = "button2";
-            button2.Size = new Size(176, 80);
-            button2.TabIndex = 2;
-            button2.Text = "Dodaj wydatki";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // button3
             // 
-            button3.Location = new Point(550, 121);
+            button3.Location = new Point(433, 139);
             button3.Name = "button3";
             button3.Size = new Size(176, 80);
             button3.TabIndex = 3;
@@ -86,7 +71,6 @@
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(800, 450);
             Controls.Add(button3);
-            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
@@ -100,7 +84,6 @@
 
         private Label label1;
         private Button button1;
-        private Button button2;
         private Button button3;
     }
 }
