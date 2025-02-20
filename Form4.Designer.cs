@@ -2,15 +2,8 @@
 {
     partial class Form4
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,31 +15,43 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            label1 = new Label();
-            button1 = new Button();
-            Wydatki = new DataGridViewTextBoxColumn();
             Przychody = new DataGridViewTextBoxColumn();
+            Wydatki = new DataGridViewTextBoxColumn();
             Reszta = new DataGridViewTextBoxColumn();
+            label1 = new Label();
+            button2 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Wydatki, Przychody, Reszta });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Przychody, Wydatki, Reszta });
             dataGridView1.Location = new Point(112, 170);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(341, 150);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
+            // 
+            // Przychody
+            // 
+            Przychody.HeaderText = "Przychody";
+            Przychody.Name = "Przychody";
+            // 
+            // Wydatki
+            // 
+            Wydatki.HeaderText = "Wydatki";
+            Wydatki.Name = "Wydatki";
+            // 
+            // Reszta
+            // 
+            Reszta.HeaderText = "Reszta";
+            Reszta.Name = "Reszta";
             // 
             // label1
             // 
@@ -59,22 +64,26 @@
             label1.TabIndex = 1;
             label1.Text = "Tabela ogólna wydatków/przychodów";
             label1.Click += label1_Click;
-          
             // 
-            // Wydatki
+            // button2
             // 
-            Wydatki.HeaderText = "Wydatki";
-            Wydatki.Name = "Wydatki";
+            button2.Location = new Point(112, 342);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 4;
+            button2.Text = "Usuń";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // Przychody
+            // button1
             // 
-            Przychody.HeaderText = "Przychody";
-            Przychody.Name = "Przychody";
-            // 
-            // Reszta
-            // 
-            Reszta.HeaderText = "Reszta";
-            Reszta.Name = "Reszta";
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(156, 23);
+            button1.TabIndex = 5;
+            button1.Text = "Powróć na stronę główną";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += new EventHandler(button1_Click);
             // 
             // Form4
             // 
@@ -83,6 +92,7 @@
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Form4";
@@ -97,9 +107,10 @@
 
         private DataGridView dataGridView1;
         private Label label1;
-        private Button button1;
-        private DataGridViewTextBoxColumn Wydatki;
+        private Button button2;
         private DataGridViewTextBoxColumn Przychody;
+        private DataGridViewTextBoxColumn Wydatki;
         private DataGridViewTextBoxColumn Reszta;
+        private Button button1;
     }
 }

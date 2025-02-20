@@ -34,6 +34,7 @@
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -93,12 +94,23 @@
             label1.TabIndex = 6;
             label1.Text = "Podaj swoje przychody i wydatki(wartość w pln)";
             // 
+            // button2
+            // 
+            button2.Location = new Point(12, 12);
+            button2.Name = "button1";
+            button2.Size = new Size(156, 23);
+            button2.TabIndex = 5;
+            button2.Text = "Powróć na stronę główną";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += new EventHandler(button2_Click);
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -120,5 +132,6 @@
         private Label label2;
         private Label label3;
         private Label label1;
+        private Button button2;
     }
 }

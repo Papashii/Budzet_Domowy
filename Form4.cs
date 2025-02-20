@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Budzet_Domowy
@@ -34,8 +29,9 @@ namespace Budzet_Domowy
 
         private void buttonLoadData_Click(object sender, EventArgs e)
         {
-
+            LoadDataFromFile("dane.txt");
         }
+
         private void LoadDataFromFile(string filePath)
         {
             try
@@ -45,18 +41,61 @@ namespace Budzet_Domowy
 
                 foreach (var row in data)
                 {
+                    int przychód = int.Parse(row[0]);
+                    int wydatek = int.Parse(row[1]);
+                    int reszta = przychód - wydatek;
 
-                    int Przychód = int.Parse(row[0]);
-                    int Wydatki = int.Parse(row[1]);
-                    int Razem = Przychód - Wydatki;
-
-
-                    dataGridView1.Rows.Add(Przychód, Wydatki, Razem);
+                    dataGridView1.Rows.Add(przychód, wydatek, reszta);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Błąd podczas odczytu pliku: {ex.Message}");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+          
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.Remove(row);
+            }
+
+            
+            SaveDataToFile("dane.txt");
+
+          
+            MessageBox.Show("Rekordy zostały pomyślnie usunięte.");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+        }
+
+        private void SaveDataToFile(string filePath)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, false))
+                {
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            var wydatek = row.Cells["Wydatki"].Value?.ToString();
+                            var przychód = row.Cells["Przychody"].Value?.ToString();
+                            var reszta = row.Cells["Reszta"].Value?.ToString();
+                            writer.WriteLine($"{przychód},{wydatek},{reszta}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd podczas zapisu pliku: {ex.Message}");
             }
         }
 

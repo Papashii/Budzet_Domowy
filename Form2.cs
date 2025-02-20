@@ -13,12 +13,12 @@ namespace Budzet_Domowy
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // Kod inicjalizacyjny do załadowania formularza
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Ścieżka do pliku, w którym będziemy zapisywać dane
+           
             string filePath = "dane.txt";
 
             // Dane z kontrolek
@@ -34,7 +34,7 @@ namespace Budzet_Domowy
                 MessageBox.Show("Wydatki nie mogą być większe niż przychód.");
                 return;
             }
-            
+
             string dataToSave = $"{income},{expense}";
 
             using (StreamWriter writer = new StreamWriter(filePath, true))
@@ -42,10 +42,15 @@ namespace Budzet_Domowy
                 writer.WriteLine(dataToSave);
             }
 
-           
+
             MessageBox.Show("Pomyślnie wprowadzono dane");
 
-            
+
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
