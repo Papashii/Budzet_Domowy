@@ -26,6 +26,7 @@ Hermetyzacja
 ![image](https://github.com/user-attachments/assets/f951f4ad-fae5-4c93-9bd1-54b0c0e251ba)
 
 ![image](https://github.com/user-attachments/assets/54851ff2-d7ed-4295-8032-c875c419d843)
+
 Jest dostępna tylko wewnątrz Form4,co zabezpiecza sposób wczytywania danych z pliku w obydwu przypadkach
 Polimorfizm
 Przykładem są metody button1_Click występujące w Form1,Form2,Form4-mają tę samą nazwę, ale różnią się implementacją, co jest przejawem polimorfizmu.
