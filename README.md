@@ -1,5 +1,7 @@
 # Budzet_Domowy
 Projekt aplikacji budżetu domowego w której śledzi się przychody i wydatki, stworzone w języku C# z użyciem .NET i WinForms.
+![image](https://github.com/user-attachments/assets/914d780d-0722-44cb-9bc0-3a029f29d754)
+
 # Funkcje aplikacji
 1. Dodawanie rekordów przychodów i wydatków.
 2. Zapisywanie rekordów do pliku
@@ -15,3 +17,5 @@ Projekt aplikacji budżetu domowego w której śledzi się przychody i wydatki, 
 # Instalacja
 1. Należy pobrać kod źródłowy
 2. Skompilować i uruchomić aplikację
+# OOP
+
